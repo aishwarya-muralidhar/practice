@@ -45,3 +45,8 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./      # root of repo contains report.html
           force_orphan: true
+
+      - name: Rename HTML report to index.html
+        run: mv report.html index.html
+
+
