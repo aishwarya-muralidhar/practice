@@ -32,7 +32,7 @@ jobs:
       # 4️⃣ Run tests and generate HTML report
       - name: Run Pytest
         run: |
-          pytest projects/practice/test_addition.py --html=report.html --self-contained-html
+          pytest test_addition.py --html=report.html --self-contained-html
 
       # 5️⃣ Push report.html to gh-pages branch
       - name: Deploy report to GitHub Pages
