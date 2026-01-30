@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="pytest_fallback" tests="1" failures="0" timestamp="2026-01-29T13:57:02.519955"><testcase classname="test_addition.py" name="test_div" time="0.000" /></testsuite>
