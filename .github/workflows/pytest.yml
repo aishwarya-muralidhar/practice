@@ -37,7 +37,11 @@ jobs:
         run: |
           pytest test_addition.py --html=report.html --self-contained-html
 
-      # 5️⃣ Push report.html to gh-pages branch
+      # 5️⃣ Rename report.html to index.html for GitHub Pages
+      - name: Prepare report for GitHub Pages
+        run: mv report.html index.html
+
+       # 6️⃣ Deploy to GitHub Pages
       - name: Deploy report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -46,7 +50,6 @@ jobs:
           publish_dir: ./      # root of repo contains report.html
           force_orphan: true
 
-      - name: Rename HTML report to index.html
-        run: mv report.html index.html
+      
 
 
